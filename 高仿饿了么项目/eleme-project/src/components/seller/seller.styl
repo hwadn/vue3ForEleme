@@ -1,0 +1,143 @@
+@import '../../common/stylus/mixin'
+.seller-wrapper
+	position absolute
+	top 172px
+	bottom 0
+	left 0
+	width 100%
+	overflow auto
+	.brief-info
+		padding 18px 0
+		margin 0 18px
+		.name-star
+			// background-color rgb(200,240,220)
+			padding-bottom 18px
+			border-bottom 1px solid rgba(7,17,27,0.1)
+			.name
+				font-size 14px
+				color rgb(7,17,27)
+				line-height 14px
+			.star-wrapper
+				padding-top 8px
+				.star
+					display inline-block
+				.rating-count,.sell-count
+					display inline-block
+					font-size 10px
+					line-height 18px
+					color rgb(77,85,93)
+				.rating-count
+					padding 0 12px 0 8px
+			.collect
+				position absolute
+				top 18px
+				right 8px
+				width 50px
+				text-align center
+				.icon-favorite
+					font-size 24px
+					line-height 24px
+					color #d4d6d9
+					&.active
+						color rgb(240,20,20)
+				.text
+					display block
+					font-size 10px
+					color rgb(77,85,93)
+					line-height 10px
+					padding-top 4px
+		.price
+			display flex
+			.delivery
+				flex 1
+				text-align center
+				border-right 1px solid rgba(7,17,27,0.1)
+				color rgb(147,153,159)
+				margin-top 18px
+				&:last-child
+					border none
+				.title
+					display block
+					font-size 10px
+					line-height 10px
+					margin-bottom 4px
+				.value
+					display block
+					font-size 10px
+					line-height 24px
+					font-weight 200
+					.number
+						position relative
+						top 2px
+						color rgb(7,17,27)
+						font-size 24px
+	.bulletin-supports
+		.bulletin
+			margin 18px 18px 0 18px
+			h1
+				font-size 14px
+				color #07111b
+				line-height 14px
+			.text
+				padding 8px 12px 16px 12px
+				font-size 12px
+				line-height 24px
+				font-weight 200
+				color rgb(240,20,20)
+			border-bottom 1px solid rgba(7,17,27,0.1)
+		.supports-wrapper
+			margin 0 18px
+			.item
+				padding 16px
+				border-bottom 1px solid rgba(7,17,27,0.1)
+				font-size 0
+				.icon
+					display inline-block
+					width 16px
+					height 16px
+					margin-right 6px
+					vertical-align top
+					background-size 100% 100%
+					background-repeat no-repeat
+					&.decrease
+						bg-image('decrease_4')
+					&.discount
+						bg-image('discount_4')
+					&.special
+						bg-image('special_4')
+					&.invoice
+						bg-image('invoice_4')
+					&.guarantee
+						bg-image('guarantee_4')
+				.text
+					font-size 12px
+					font-weight 200
+					color rgb(7,17,27)
+					line-height 16px
+	.outdoor-scene
+		margin 18px
+		h1
+			font-size 14px
+			line-height 14px
+			margin-bottom 12px
+		.img-wrapper
+			white-space nowrap
+			overflow-x scroll
+			overflow-y hidden
+			img
+				margin-right 6px
+	.seller-info
+		margin 0 18px
+		h1
+			padding 18px 0 12px 0
+			border-bottom 1px solid rgba(7,17,27,0.1)
+		.info-wrapper
+			.info
+				font-size 12px
+				font-weight 200
+				color rgb(7,17,27)
+				line-height 16px
+				padding 16px 12px
+				border-bottom 1px solid rgba(7,17,28,0.1)
+				&:last-child
+					border none
