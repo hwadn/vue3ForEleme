@@ -28,4 +28,6 @@ new Vue({
 }).$mount("#app");
 
 // 初始路由组件显示goods
-router.push('seller')
+router.push('ratings').catch(err=>{
+	
+})

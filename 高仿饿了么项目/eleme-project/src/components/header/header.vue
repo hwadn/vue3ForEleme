@@ -51,7 +51,7 @@
 	    			</div>
 	    		<div class="supports" v-if="seller.supports">
 	    			
-	    			<div class="support-item" v-for="item in seller.supports">
+	    			<div class="support-item" v-for="(item,index) in seller.supports" v-bind:key="index">
 	    				<span class="icon" :class="iconClassMap[item.type]"></span>
 	    				<span class="text">{{item.description}}</span>
 	    			</div>

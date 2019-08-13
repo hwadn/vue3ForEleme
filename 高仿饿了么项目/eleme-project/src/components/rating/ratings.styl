@@ -1,0 +1,154 @@
+@import '../../common/stylus/mixin'
+.ratings-wrapper
+	position absolute
+	top 172px
+	bottom 0
+	left 0
+	width 100%
+	overflow-y scroll
+	overflow-x hidden
+	.scores
+		display flex
+		.comprehensive
+			flex 0 0 138px
+			margin 18px 0
+			text-align center
+			border-right 1px solid rgba(7,17,27,0.1)
+			h1
+				font-size 24px
+				line-height 28px
+				color rgb(255,153,0)
+			.text
+				padding 6px 0 8px 0
+				font-size 12px
+				color rgb(7,17,27)
+				line-height 12px
+			.contrast
+				font-size 10px
+				color rgb(7,17,27)
+				line-height 10px
+				margin-bottom 6px
+		.respective
+			padding 18px 24px
+			.score
+				margin-bottom 8px
+				&:last-child
+					margin 0
+				.text
+					display inline-block
+					margin-right 12px
+					font-size 12px
+					line-height 18px
+					color rgb(7,17,27)
+				.star
+					display inline-block
+				.number
+					display inline-block
+					margin-left 12px
+					font-size 12px
+					line-height 18px
+					color rgb(255,153,0)
+				.delivery
+					display inline-block
+					font-size 12px
+					color rgb(147,153,159)
+					line-height 18px
+	.ratings-info
+		padding 18px 0
+		.bar
+			.filter
+				margin 0 18px
+				padding-bottom 18px
+				border-bottom 1px solid rgba(7,17,27,0.14)
+				.block
+					display inline-block
+					padding 8px 12px
+					margin-right 8px
+					font-size 12px
+					line-height 16px
+					color #4d555f
+				.all
+					background-color rgba(0,160,220,0.2)
+					&.active
+						color #fff
+						background-color #00a9dc
+				.recommend
+					background-color rgba(0,160,220,0.2)
+					&.active
+						color #fff
+						background-color #00a9dc
+				.disclose
+					background-color rgba(77,85,93,0.2)
+					&.active
+						color #fff
+						background-color #4d555d
+			.whether
+				padding 12px 0 12px 18px
+				font-size 12px
+				width 100%
+				color #93999f
+				border-bottom 1px solid rgba(7,17,27,0.1)
+				.icon-check_circle
+					color #93999f
+					font-size 24px
+					vertical-align middle
+					&.active
+						color #00c850
+		.contents
+			ul
+				li
+					margin 0 18px
+					padding 18px 0
+					display flex
+					border-bottom 1px solid rgba(7,17,27,0.1)
+					.avatar
+						flex 0 0 28px
+						margin-right 12px
+						img
+							border-radius 50%
+					.detail
+						flex 1
+						.user
+							font-size 10px
+							color #07111b
+							line-height 12px
+							.name
+								display inline-block
+							.time
+								display inline-block
+								position absolute
+								right 18px
+								color #93999f
+								font-weight 200
+						.score
+							margin-bottom 6px
+							padding-top 4px
+							.star
+								display inline-block
+							.delivery-time
+								display inline-block
+								font-size 10px
+								font-weight 200
+								color #93999f
+								padding-left 6px
+						.text
+							font-size 12px
+							color #07111b
+							line-height 18px
+						.dishes
+							padding-top 4px
+							.icon-thumb_up
+								display inline-block
+								color #00a0dc
+								font-size 12px
+								line-height 16px
+								margin-right 8px
+							.dish
+								display inline-block
+								font-size 9px
+								color #93999f
+								line-height 16px
+								border 1px solid rgba(7,17,27,0.1)
+								padding 2px 6px
+								margin-top 4px
+								margin-right 8px

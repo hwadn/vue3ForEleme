@@ -45,7 +45,7 @@
 				</div>
 			</div>
 			<div class="supports-wrapper" v-if="seller.supports">
-				<div class=item v-for="item in seller.supports">
+				<div class=item v-for="(item,index) in seller.supports" v-bind:key="index">
 					<span class="icon" :class="iconClassMap[item.type]"></span>
 					<span class="text">{{item.description}}</span>
 				</div>
@@ -55,14 +55,14 @@
 		<div class="outdoor-scene">
 			<h1>商家实景</h1>
 			<div class="img-wrapper">
-				<img v-for="pic in seller.pics" :src="pic" width="120" height="90">
+				<img v-for="(pic,index) in seller.pics" :src="pic" :key="index" width="120" height="90">
 			</div>
 		</div>
 		<div class="divider"></div>
 		<div class="seller-info">
 			<h1>商家信息</h1>
 			<ul class="info-wrapper">
-				<li class="info" v-for="info in seller.infos">
+				<li class="info" v-for="(info,index) in seller.infos" :key="index">
 					{{info}}
 				</li>
 			</ul>
@@ -70,6 +70,7 @@
 	</div>
 </template>
 <script>
+	import axios from 'axios'
 	import star from '../star/star'
 	export default{
 		data(){
