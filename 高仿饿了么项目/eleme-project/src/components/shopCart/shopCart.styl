@@ -1,0 +1,154 @@
+.shop-cart
+	position fixed
+	left 0
+	bottom 0
+	width 100%
+	height 48px
+	z-index 50
+	display flex
+	.cart-wrapper
+		position relative
+		background-color #141d27
+		.cart
+			display inline-block
+			position relative
+			top -10px
+			background-color #141d27
+			height 56px
+			line-height 56px
+			text-align center
+			vertical-align top
+			width 56px
+			margin 0 12px
+			border-radius 50%
+			padding 6px
+			box-sizing border-box
+			.total-count
+				position absolute
+				top 0
+				right 0
+				background-color #f01414
+				color #fff
+				width 24px
+				height 16px
+				line-height 16px
+				font-size 9px
+				box-shadow 0px 4px 8px 0px rgba(0,0,0,0.4)
+				font-weight 700
+				border-radius 16px
+				text-align center
+			.box
+				width 44px
+				height 44px
+				border-radius 50%
+				background-color #2b343c
+				font-size 24px
+				line-height 44px
+				font-weight 700
+				color #80858a
+				&.active
+					background-color #00a0dc
+					color #fff
+		.cost
+			display inline-block
+			vertical-align top
+			color rgba(255,255,255,0.4)
+			padding 0 12px
+			margin-top 12px
+			font-size 16px
+			line-height 24px
+			font-weight 700
+			box-sizing border-box
+			border-right 1px solid rgba(255,255,255,0.1)
+			&.active
+				color white
+	.delivery-price
+		background-color #141d27
+		flex 1
+		line-height 48px
+		padding-left 12px
+		font-size 10px
+		font-weight 700
+		color rgba(255,255,255,0.4)
+	.min-price
+		background-color #2b343c
+		flex 0 0 105px
+		color rgba(255,255,255,0.4)
+		font-size 12px
+		font-weight 700
+		line-height 48px
+		text-align center
+		&.active
+			background-color #00b43c
+			color #fff
+	.ball-container
+		position fixed
+		left 32px
+		bottom 40px
+		z-index 200
+	.shop-list
+		position absolute
+		bottom 48px
+		left 0
+		width 100%
+		background-color #fff
+		z-index -1
+		&.upDown-enter-active,&.upDown-leave-active
+			transition all 0.5s
+			transform translate3d(0,0,0)
+		&.upDown-enter,&.upDown-leave-to
+			transform translate3d(0,100%,0)
+		.title
+			height 40px
+			line-height 40px
+			background-color #f3f5f7
+			border-bottom 1px solid rgba(7,17,27,0.1)
+			.text
+				display inline-block
+				font-size 14px
+				font-weight 200
+				color #07111b
+				padding-left 18px
+			.clean
+				display inline-block
+				position absolute
+				right 8px
+				font-size 12px
+				color #00a0dc
+				padding 0 10px
+		.list
+			max-height:217px
+			overflow auto
+			background-color #fff
+			li
+				display flex
+				margin 0 18px
+				height 48px
+				border-bottom 1px solid rgba(7,17,27,0.1)
+				div
+					display inline-block
+				.name
+					flex 1
+					font-size 14px
+					color #07111b
+					line-height 48px
+					font-weight 700
+				.price
+					color #f01414
+					padding 0 12px 0 18px
+					line-height 48px
+				.cart-control
+					margin-top 6px
+	.backdrop
+		position fixed
+		top 0
+		bottom 0
+		left 0
+		right 0
+		background-color rgba(7,17,27,0.6)
+		background-filter blur(10px)
+		z-index -2
+		&.fadeBg-enter-active,&fadeBg-leave-active
+			transform opacity 0.5s
+		&.fadeBg-enter,&fadeBg-leave-to
+			opacity 0
